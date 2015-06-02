@@ -19,7 +19,7 @@
 	<p><strong>Warning:</strong> Bookmarklet uses flashing colours and should be avoided by those prone to seizures.</p>
 
 	<p>
-		<a href="javascript:(function(){%20var%20style%20=%20document.createElement(%27style%27),%20styleContent%20=%20document.createTextNode(%27*,%20*::after,%20*::before%20{%20outline:%200px%20solid%20yellow%20!important;%20-webkit-animation:%20pop%20300ms%20infinite%20alternate%20!important;%20animation:%20pop%20300ms%20infinite%20alternate%20!important;%20}%20@-webkit-keyframes%20pop%20{%20100%%20{%20outline-width:%202em%20!important;%20}%20}%20@keyframes%20pop%20{%20100%%20{%20outline-width:%202em%20!important;%20}%20}%27);%20style.appendChild(styleContent%20);%20var%20caput%20=%20document.getElementsByTagName(%27head%27);%20caput[0].appendChild(style);%20})();">Make it Pop!</a>
+		<a href="javascript:(function(){%20var%20style%20=%20document.createElement(%27style%27),%20styleContent%20=%20document.createTextNode(%27@-webkit-keyframes%20%22pop%22{to{border-width:1em;}}@keyframes%20%22pop%22{to{border-width:1em;}}*,*:after,*:before{border:0px%20solid%20yellow;-webkit-animation:pop%20300ms%20ease-in-out%20infinite%20alternate%20!important;animation:pop%20300ms%20ease-in-out%20infinite%20alternate%20!important}%27);%20style.appendChild(styleContent%20);%20var%20caput%20=%20document.getElementsByTagName(%27head%27);%20caput[0].appendChild(style);%20})();">Make it Pop!</a>
 	</p>
 
 	<p>Drag the it to your bookmarks bar for easy access.</p>
